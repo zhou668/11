@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="referrer" content="always">
+  <title></title>
+  <style type="text/css">
+    body, iframe { padding: 0; margin: 0; border: none;}
+    iframe { width: 100vw; min-height: 100vh;}
+    .mask {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 10;background-color: rgb(0 0 0 / 80%);background-repeat: no-repeat;background-size: 100%;}
+  </style>
+  <script type="text/javascript" src="https://statres.quickapp.cn/quickapp/js/routerinline.min.js"></script>
+</head>
+<body>
+  <iframe name="ta" id="my" src="" noresize="noresize" border="0" scrollbars="no"></iframe>
+  <div id="guide" class="mask m-guide" hidden></div>
+  <script type="text/javascript">
+    const script = document.createElement('script')
+    if(-1 < location.href.indexOf('test=1')){
+      script.src = 'https://yun.dui88.com/h5-mami/activity/wx/silverlining.js?' + (+new Date())
+    }else{
+      script.src = 'https://yun.dui88.com/h5-mami/activity/wx/silverlining.min.js?'+ ~~(+new Date()/864e5)
+    }
+    document.body.appendChild(script)
+  </script>
+</body>
+</html>
